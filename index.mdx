@@ -1,7 +1,7 @@
 ---
 title: "Home"
 description: "Onboarding guides, HR policies, IT help, and department runbooks for the whole company."
-mode: custom
+mode: "custom"
 ---
 
 <div className="mx-auto flex w-full max-w-[720px] flex-col gap-12 px-4 py-10 lg:gap-14 lg:py-16">
@@ -10,6 +10,7 @@ mode: custom
       <h1 className="text-2xl font-semibold tracking-tight text-gray-900 dark:text-gray-50">
         Your journey begins here
       </h1>
+
       <p className="text-balance text-base text-gray-600 dark:text-gray-400">
         This is your go-to reference for how things work here. Use the tabs to navigate to different resources or search with <kbd>⌘</kbd> <kbd>K</kbd>.
       </p>
@@ -17,43 +18,172 @@ mode: custom
   </div>
 
   <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-    <a
-      href="/onboarding/first-day"
-      className="group flex flex-col outline-none"
-    >
-      <div
-        className="kb-feature-card relative flex h-[170px] items-center justify-center overflow-hidden rounded-2xl ring-1 ring-gray-100 transition group-hover:ring-gray-200 dark:ring-white/[0.08] dark:group-hover:ring-white/15 saturate-50 group-hover:saturate-100"
-      >
+    <a href="/onboarding/first-day" className="group flex flex-col outline-none">
+      <div className="kb-feature-card relative flex h-[170px] items-center justify-center overflow-hidden rounded-2xl ring-1 ring-gray-100 transition group-hover:ring-gray-200 dark:ring-white/[0.08] dark:group-hover:ring-white/15 saturate-50 group-hover:saturate-100">
         <div className="relative flex items-center justify-center">
           <Icon icon="calendar-1" size={36} className="!bg-white" />
         </div>
       </div>
+
       <div className="flex flex-col gap-1 pt-4">
         <span className="text-base font-medium text-gray-900 dark:text-gray-50">Your first day</span>
+
         <span className="text-sm leading-5 text-gray-600 dark:text-gray-400">
           Your first day is all about getting oriented and connecting with key team members.
         </span>
       </div>
     </a>
 
-    <a
-      href="/onboarding/tools/account-access"
-      className="group flex flex-col outline-none"
-    >
-      <div
-        className="kb-feature-card relative flex h-[170px] items-center justify-center overflow-hidden rounded-2xl ring-1 ring-gray-100 transition group-hover:ring-gray-200 dark:ring-white/[0.08] dark:group-hover:ring-white/15 saturate-50 group-hover:saturate-100"
-      >
+    <a href="/onboarding/tools/account-access" className="group flex flex-col outline-none">
+      <div className="kb-feature-card relative flex h-[170px] items-center justify-center overflow-hidden rounded-2xl ring-1 ring-gray-100 transition group-hover:ring-gray-200 dark:ring-white/[0.08] dark:group-hover:ring-white/15 saturate-50 group-hover:saturate-100">
         <div className="relative flex items-center justify-center">
           <Icon icon="key-round" size={36} className="!bg-white" />
         </div>
       </div>
+
       <div className="flex flex-col gap-1 pt-4">
         <span className="text-base font-medium text-gray-900 dark:text-gray-50">Account access</span>
+
         <span className="text-sm leading-5 text-gray-600 dark:text-gray-400">
-          Which accounts you&apos;ll need, how to claim them, and what to do if anything is missing.
+          Which accounts you'll need, how to claim them, and what to do if anything is missing.
         </span>
       </div>
     </a>
+  </div>
+
+  <div className="flex flex-col gap-4">
+    <h2 className="text-lg font-medium tracking-tight text-gray-900 dark:text-gray-50">Who we are</h2>
+
+    {/* BEGIN notion-sync source=c527689b59484b9a8f82367af73de37d synced=2026-06-10 — content in this block is auto-replaced by the weekly Notion sync; edit in Notion instead */}
+
+    <p className="text-sm text-gray-600 dark:text-gray-400">
+      The Mintie Directory — 71 people across 10 departments. Synced weekly from Notion.
+    </p>
+
+    <AccordionGroup>
+      <Accordion title="Founders (2)">
+        | Name        | Title            | Reports To | Location | Status  |
+        | ----------- | ---------------- | ---------- | -------- | ------- |
+        | Han Wang    | CEO & Co-Founder | —          | SF       | Current |
+        | Hahnbee Lee | CTO & Co-Founder | —          | SF       | Current |
+      </Accordion>
+
+      <Accordion title="Operations (4)">
+        | Name                | Title                   | Reports To    | Location | Status  |
+        | ------------------- | ----------------------- | ------------- | -------- | ------- |
+        | Andressa Nascimento | Office Manager          | Shawn Lestage | SF       | Current |
+        | Cami Steppe         | BizOps Intern           | Shawn Lestage | SF       | Current |
+        | Shawn Lestage       | Chief Operating Officer | Han Wang      | SF       | Current |
+        | Taylor Tran         | Revenue Operations      | Shawn Lestage | SF       | Current |
+      </Accordion>
+
+      <Accordion title="Engineering (21)">
+        | Name              | Title                          | Reports To   | Location | Status  |
+        | ----------------- | ------------------------------ | ------------ | -------- | ------- |
+        | Aadit Shah        | Engineering Intern             | Reed Barnes  | SF       | Current |
+        | Brandon McConnell | Senior Frontend Engineer       | Hahnbee Lee  | SF       | Current |
+        | Dens Sumesh       | Backend Engineer               | Nick Khami   | SF       | Current |
+        | Denzell Ford      | Product Engineer               | Nick Khami   | SF       | Current |
+        | Hammad Shami      | Product Engineer               | Justin Torre | SF       | Current |
+        | Ian Steneker      | Backend Engineer               | Justin Torre | SF       | Current |
+        | Justin Torre      | Engineering Manager            | Hahnbee Lee  | SF       | Current |
+        | Kathryn Lawrence  | Frontend Engineer              | Justin Torre | SF       | Current |
+        | Kyle Finken       | Product Engineer               | Justin Torre | SF       | Current |
+        | Leyland Yang      | Product Engineer               | Nick Khami   | SF       | Current |
+        | Lindsay Zhang     | Software Engineer Co-Op Intern | Justin Torre | SF       | Current |
+        | Lucas Punz        | Software Engineer              | Justin Torre | SF       | Current |
+        | Mayank Shouche    | Founding Backend Engineer      | Justin Torre | SF       | Current |
+        | Nick Khami        | Engineering Manager            | Hahnbee Lee  | SF       | Current |
+        | Nivedh Mudiam     | Backend Engineer               | —            | SF       | Pending |
+        | Patrick Foster    | Backend AI Engineer            | Nick Khami   | SF       | Current |
+        | Rasika Iyer       | Product Engineer               | Nick Khami   | SF       | Current |
+        | Reed Barnes       | Senior Product Engineer        | Nick Khami   | SF       | Current |
+        | Rohan Godha       | Engineering Intern             | Kyle Finken  | SF       | Current |
+        | Ryan Nguyen       | Backend AI Engineer            | Nick Khami   | SF       | Current |
+        | Sam Ding          | Design Engineer                | Nick Khami   | SF       | Current |
+      </Accordion>
+
+      <Accordion title="Product (2)">
+        | Name          | Title           | Reports To  | Location | Status  |
+        | ------------- | --------------- | ----------- | -------- | ------- |
+        | Neha Halebeed | Product Manager | Hahnbee Lee | SF       | Current |
+        | Valerie Wong  | Product Manager | Hahnbee Lee | SF       | Pending |
+      </Accordion>
+
+      <Accordion title="Design (4)">
+        | Name               | Title                  | Reports To   | Location | Status  |
+        | ------------------ | ---------------------- | ------------ | -------- | ------- |
+        | Dmytro Tovstokoryi | Design Engineer        | Hahnbee Lee  | SF       | Current |
+        | Emmanuel Dankyi    | Designer               | James Badour | SF       | Current |
+        | Fay Dakrouri       | Staff Product Designer | James Baduor | SF       | Current |
+        | James Baduor       | Head of Design         | Han Wang     | SF       | Current |
+      </Accordion>
+
+      <Accordion title="Marketing (5)">
+        | Name          | Title             | Reports To   | Location | Status  |
+        | ------------- | ----------------- | ------------ | -------- | ------- |
+        | Cole Gottdank | GTM Manager       | Lauren Volpi | SF       | Current |
+        | Ethan Palm    | Technical Writer  | Lauren Volpi | SF       | Current |
+        | HK Chahal     | Growth Marketer   | Lauren Volpi | SF       | Current |
+        | Jadon Yara    | Marketing         | Lauren Volpi | SF       | Current |
+        | Lauren Volpi  | Head of Marketing | Hahnbee Lee  | SF       | Current |
+      </Accordion>
+
+      <Accordion title="Sales (26)">
+        | Name              | Title                              | Reports To       | Location | Status  |
+        | ----------------- | ---------------------------------- | ---------------- | -------- | ------- |
+        | Allan Kaganov     | Enterprise Account Executive (NYC) | Daniel Wolkowitz | NYC      | Current |
+        | Arthur Le Meur    | Enterprise Account Executive       | Daniel Wolkowitz | NYC      | Pending |
+        | Brittany Goldston | Enterprise Account Executive       | Daniel Wolkowitz | SF       | Current |
+        | Daniel Wolkowitz  | Enterprise GTM Lead                | Ruairi Wiepking  | SF       | Current |
+        | David Arce        | Mid-Market Account Executive       | Ruairi Wiepking  | SF       | Current |
+        | Djibril Niang     | Mid-Market Account Exeuctive       | Ruairi Wiepking  | SF       | Pending |
+        | Gabby Spraggins   | Mid-Market Account Executive       | Ruairi Wiepking  | SF       | Current |
+        | Jack Marks        | Mid-Market Account Executive       | Ruairi Wiepking  | SF       | Current |
+        | Jarod Hatch       | Mid-Market Account Executive       | Ruairi Wiepking  | SF       | Current |
+        | Jawad Kazi        | Sales Development Representative   | Ruairi Wiepking  | SF       | Pending |
+        | Josh Sachs        | Sales Development Representative   | Ruairi Wiepking  | SF       | Pending |
+        | Marco Dewey       | Solutions Engineer                 | Ruairi Wiepking  | SF       | Current |
+        | Martin Topalov    | Sales Development Representative   | Ruairi Wiepking  | SF       | Pending |
+        | Matthew Hagarty   | Mid-Market Account Executive       | Ruairi Wiepking  | SF       | Current |
+        | Michael Easton    | Enterprise Account Executive       | Daniel Wolkowitz | NYC      | Pending |
+        | Miles Price       | Mid-Market Account Executive       | Ruairi Wiepking  | SF       | Current |
+        | Monique Aldrich   | Sales Development Representative   | Ruairi Wiepking  | SF       | Pending |
+        | Nick Rivera       | Enterprise Account Executive       | Daniel Wolkowitz | SF       | Current |
+        | Reed Cotterill    | Enterprise Account Executive       | Daniel Wolkowitz | SF       | Current |
+        | Ruairi Wiepking   | Head of Sales                      | Shawn Lestage    | SF       | Current |
+        | Ryan Schwarz      | Mid-Market Account Executive       | Ruairi Wiepking  | SF       | Current |
+        | Sophia Barnes     | Solutions Engineer                 | Ruairi Wiepking  | SF       | Current |
+        | Ted Pollak        | Channel Partner Manager            | Shawn Lestage    | SF       | Pending |
+        | Tony Evans        | Enterprise Account Executive       | Daniel Wolkowitz | NYC      | Current |
+        | Trevor Gerald     | Solutions Engineer                 | Ruairi Wiepking  | SF       | Current |
+        | Will Burch        | Enterprise Account Executive       | Daniel Wolkowitz | SF       | Current |
+      </Accordion>
+
+      <Accordion title="Customer Success (2)">
+        | Name           | Title                                        | Reports To    | Location | Status  |
+        | -------------- | -------------------------------------------- | ------------- | -------- | ------- |
+        | Andrew Tsai    | Founding Enterprise Customer Success Manager | Shawn Lestage | SF       | Current |
+        | Demarcus Lloyd | Enterprise Customer Success Manager          | Shawn Lestage | SF       | Current |
+      </Accordion>
+
+      <Accordion title="Customer Support (4)">
+        | Name             | Title            | Reports To    | Location | Status  |
+        | ---------------- | ---------------- | ------------- | -------- | ------- |
+        | Alejandro Cortez | Support Engineer | Dean Sliney   | Remote   | Current |
+        | Dean Sliney      | Head of Support  | Shawn Lestage | SF       | Current |
+        | Royce Williams   | Support Engineer | Dean Sliney   | SF       | Current |
+        | Skipper Willy    | Support Engineer | Dean Sliney   | SF       | Current |
+      </Accordion>
+
+      <Accordion title="People (1)">
+        | Name           | Title  | Reports To    | Location | Status  |
+        | -------------- | ------ | ------------- | -------- | ------- |
+        | Lauren Frailey | Talent | Shawn Lestage | SF       | Current |
+      </Accordion>
+    </AccordionGroup>
+
+    {/* END notion-sync */}
   </div>
 
   <div className="flex flex-col gap-4">
@@ -63,6 +193,7 @@ mode: custom
       <Card title="HR & People" icon="users" iconType="light" href="/hr-people">
         Benefits, time off, performance reviews, and compensation.
       </Card>
+
       <Card title="IT & Security" icon="shield-check" iconType="light" href="/it-security">
         Access requests, device policy, and security training.
       </Card>
@@ -72,6 +203,7 @@ mode: custom
       <Card title="Policies" icon="scroll" iconType="light" href="/policies">
         Code of conduct, expense reimbursement, travel, and remote work.
       </Card>
+
       <Card title="Engineering" icon="code-xml" iconType="light" href="/engineering">
         Dev setup, deployment, incident response, and architecture.
       </Card>
