@@ -150,6 +150,12 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Marketing",
+        "pages": [
+          "marketing/events"
+        ]
       }
     ]
   },
